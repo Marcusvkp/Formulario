@@ -4,45 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"> <!-- Estilo CSS principal -->
     <title>Formulários</title>
 </head>
 
 <body>
-    <form method="post" action="contato.php">
-        <h1>Contatos</h1>
-        <label>Nome completo</label><br>
-        <input type="text" name="nome" size="50" placeholder="Entre com seu Nome Completo">
-        <br><br>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <a href="#">
+                    <img src="Imagens/logo.png" title="logo" alt="logo">
+                </a>
+            </div>
 
-        <table>
-            <tr>
-                <td>
-                    <label>E-mail</label><br>
+            <nav>
+                <a href="#">Pagina Inicial</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim do cabeçalho -->
 
-                    <input type="email" name="number" placeholder="Entre com o seu E-mail">
-                </td>
+    <!-- Início do conteúdo principal -->
+    <main>
+        <div id="cabeçalho-interno">
+            <div class="container">
+                <h1>Contatos</h1>
+                <h5>Use o formulário abaixo para entrar em contato com nossos canais de atendimento.</h5>
+            </div>
+        </div>
+        <article class="container">
+            <form method="post" action="contato.php">
+                <div class="linha"><br>
+                    <label>Nome Completo</label>
+                    <input type="text" name="nome" size="50" placeholder="Entre com seu Nome Completo">
+                </div>
 
-                <td>
-                    <label>Telefone</label><br>
-                    <input type="email" name="number" placeholder="Entre com o seu Telefone">
-                </td>
-            </tr>
-        </table>
+                <div class="linha">
+                    <div class="coluna">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="Entre com o seu E-mail">
+                    </div>
+                    <div class="coluna">
+                        <label>Telefone</label>
+                        <input type="email" name="number" placeholder="Entre com o seu Telefone">
+                    </div>
+                    <div style="clear: both"></div> <!-- Esta div foi necessária para impedir o colapso div abaixo -->
+                    <div class="linha">
+                        <label>Assunto</label>
+                        <input type="text" name="assunto" size="50" placeholder="Informe o Assunto">
+                    </div>
+                    <div class="linha">
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" placeholder="Entre com a mensagem" rows="5" cols="50"></textarea>
+                    </div>
+                    <div class="linha">
+                        <input type="submit" name="submit" value="Enviar" class="botao-enviar">
+                    </div>
+            </form>
+        </article>
+    </main>
+    <!-- Fim do conteúdo principal -->
 
-        <br>
-
-        <label>Assunto</label><br>
-        <input type="text" name="assunto" size="50" placeholder="Informe o assunto">
-
-        <br><br>
-
-        <label>Mensagem</label><br>
-        <textarea name="mensagem" placeholder="Entre com a mensagem" rows="5" cols="50"></textarea>
-
-        <br><br>
-
-        <input type="submit" name="submit" value="Enviar">
-    </form>
+    <!-- Início do rodapé -->
+    <footer>
+        @2021 | Todos os direitos reservados.
+    </footer>
+    <!-- Fim do rodapé -->
 </body>
 
 </html>

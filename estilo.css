@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------------ Tags principais ------------------------------------ */
+body {
+    font-family: "helvetica", "arial narrow", "arial"; /* fontes principais */
+    color: #111;
+    /* cor de texto variante da cor preta */
+}
+
+a {
+    color: #31d1bb;
+    /* cor: variante do verde; */
+}
+
+header {
+    height: 80px;
+    /* altura de 80 pixels */
+    background-color: #111;
+    /* cor de fundo: variação da cor preta */
+}
+
+nav {
+    float: right;
+    /* alinhamento à direita */
+    margin-top: 30px;
+    /* margem para o topo de 30 pixels */
+}
+
+nav a {
+    color: #f4f4f4;
+    /* cor: variação de branco */
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+    padding: 30px 20px;
+    /* margem interna: 30 pixels no topo e rodapé, 20 pixels nos lados */
+}
+
+nav a:hover {
+    /* :hover aplica um estilo quando o mouse passa por cima do item */
+    background-color: #31d1bb;
+    /* cor de fundo: variação do verde */
+}
+
+h1 {
+    font-size: 60px;
+    /* tamanho da fonte: 60 pixels */
+}
+
+h5 {
+    color: #777;
+    /* cor: variação do cinza */
+    padding: 5px 0 0 5px;
+    /* margem para o topo e para a direita de 5 pixels */
+}
+
+article {
+    padding: 30px 0;
+    /* margem interna para o topo e rodapé de 30 pixels */
+}
+
+label {
+    font-weight: bold;
+    /* negrito */
+    font-size: 14px;
+    /* tamanho da fonte: 14 pixels */
+}
+
+footer {
+    text-align: center;
+    /* alinhamento do texto ao centro */
+    background-color: #ccc;
+    /* cor de fundo: cinza claro */
+    margin-top: 50px;
+    /* margem para o topo de 50 pixels */
+    padding: 20px 0;
+    /* margem interna para o topo e rodapé de 20 pixels */
+    color: #111;
+    /* cor do texto: preta */
+}
+
+input {
+    width: calc(100% - 20px);
+    /*calc  determina o tamanho do maximo - 20px (padding)*/
+    padding: 10px;
+    /* margem interna de 10 pixels */
+}
+
+textarea {
+    width: calc(100% - 20px);
+    /* calc determina o tamanho do maximo - 20px (padding)*/
+    padding: 10px;
+    /* margem interna de 10 pixels */
+}
+
+/* ------------------------------------ Id's ------------------------------------- */
+
+#logo {
+    float: left;
+    /* alinhamento à esquerda */
+    margin-top: 10px;
+    /* margem para o topo de 10 pixels */
+    height: 60px;
+    /* altura proporcional ao header */
+    width: auto;
+    /* largura automática para manter proporção */
+}
+
+#logo img {
+    height: 100%;
+    /* preenche a altura do container */
+    width: auto;
+    /* mantém a proporção da imagem */
+}
+
+
+#cabeçalho-interno {
+    padding: 50px;
+    background-color: #ccc;
+    /* cor de fundo: cinza claro */
+}
+
+/* ------------------------------------ Classes ------------------------------------- */
+.container {
+    width: 960px;
+    /* largura de 960 pixels */
+    margin: 0 auto;
+    /* margem automática nos lados esquerdo e direito */
+}
+
+.botao-enviar {
+    background-color: #02b81a;
+    /* cor de fundo: variação do verde */
+    border: solid 1px #016b0f;
+    /* cor da borda: variação do verde escuro */
+    color: white;
+    /* cor do texto: branca */
+    padding: 20px;
+    /* margem interna de 20 pixels */
+    width: 100%;
+    /* largura de 100% */
+}
+
+.linha {
+    margin: 10px 0 20px 0;
+    /* margem topo: 10px e para o rodapé: 20px */
+}
+
+.coluna {
+    width: 50%;
+    /* largura de 50% */
+    float: left;
+    /* alinhamento à esquerda */
+}
